@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Roboto:wght@100;500;700&display=swap');
+
+
+body{
+  background-color: #F5ECD7;
+  display:flex;
+  flex-direction: column;
+  margin: 50px 30px 50px 30px;
+  font-family:Roboto, Arial;
+  height: 100svh;
+  
+}
+
+strong{
+  color: rgba(245, 245, 220, 110);
+  opacity: 0.9;
+  box-shadow: 0 7px 10px rgba(0, 0, 0,0.20);
+  border-style: 2px;
+}
+
+
+.html{
+  scroll-behavior:smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+  
+}
+
+.top-card{
+  position: relative;
+  font-size: 3rem;
+  color: #878787;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 24px;
+  padding: 4%;
+  box-shadow: 0 7px 10px rgba(0, 0, 0,0.20);
+  background-color: #ebe2cd;
+  margin-bottom: 22px;
+  transition: all 0.5s;
+  z-index: 1;
+  
+}
+
+.top-card::after{
+  
+    content: "";
+    background-image: url("pictures/wave.png");
+    box-shadow: 0 7px 10px rgba(0, 0, 0,0.20);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0px 0px 24px 24px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+.identity-parent{
+  position: relative;
+  color: beige;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 4%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #68a67d;
+  margin-bottom: 10PX;
+  transition: all 0.5s;
+  pointer-events: fill;
+  z-index: 1;
+  
+}
+
+  .identity-parent::after {
+    content: "";
+    position: absolute;
+    background-image: url("pictures/me.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80rem;
+    width:15rem;
+    top: 7rem;
+    left: -6rem;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+  /*make a outer border*/
+  
+.image{
+  position: relative;
+  object-fit: cover;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+ /* make a inner border  */
+
+.image .identity-image{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.text-data, .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-data .name{
+  font-size: px;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-style: 5px;
+
+}
+
+.text-data .job{
+  font-size: 15px;
+  font-weight: 400;
+  font-weight: bold;
+  
+  
+}
+
+.identity-parent .media-container{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-container .links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+  height: 34px;
+  width: 34px;
+  margin: 0px 8px;
+  color: #f1f1f1;
+  background-color: #4070f4;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.identity-parent .buttons{
+  
+  align-items: center;
+  margin-top: 15px;
+}
+
+.container .second-card{
+  background-color: #F18F01 ;
+  color: beige;
+  font-family:Roboto;
+  position: relative;
+  display: flex;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0 0.1);
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.container .second-card::after{
+  content: "";
+  position: absolute;
+  background-image: url("pictures/media.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80rem;
+  width:15rem;
+  top: 7rem;
+  left: -2rem;
+  right: 20rem;
+  bottom: auto;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* end of after card effect */
+
+.container .third-card{
+  background-color:#353535;
+  font-family:Roboto;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 24px;
+  padding: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  
+}
+
+.container .third-card::after{
+  content: "";
+  position:absolute;
+  background-image: url("pictures/computer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80rem;
+  width:10rem;
+  top: 11rem;
+  left: -2rem;
+  right: 20rem;
+  bottom: auto;
+  opacity: 0;
+  z-index: -1 ;
+  pointer-events: none;
+}
+
+
+.container .fourth-card{
+  background-color: #F18F01;
+  color:beige;
+  font-family:Roboto;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 24px;
+  padding: 35px !important; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.container .fifth-card{
+  background-color: #5f5f5f;
+  color:beige;
+  font-family:Roboto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 24px;
+  padding: 4.8rem !important; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.container .fifth-card::after{
+  content: "";
+  position:absolute;
+  background-image: url("pictures/location.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80rem;
+  width:10rem;
+  top: -1rem;
+  left: -2rem;
+  right: 20rem;
+  bottom: auto;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.fifth-card > span {
+  position: relative;
+  align-items: center;
+  
+  
+}
+
+.container .sixth-card{
+  background-color: #8FBF9F;
+  color:beige;
+  font-family:Roboto;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  border-radius: 24px;
+  padding: 38px!important; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.container .sixth-card::after{
+  content: "";
+  position:absolute;
+  background-image: url("pictures/web-design.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90rem;
+  width:14rem;
+  top: -1rem;
+  left: -2rem;
+  right: 20rem;
+  bottom: auto;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.second-card .aboutme{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 15%;
+  left: 12%;
+}
+
+.third-card .imposibble{
+  margin-bottom: 10px;
+  color: beige;
+  font-weight: bold;
+  
+  
+}
+
+.third-card .link1{
+  text-decoration: none;
+}
+
+.logo{
+  position: absolute;
+  
+  height: 70px;
+  border-radius: 5px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+} 
+
+.logo1{
+
+  height: 60px;
+  width: 95px;
+  border-radius: 5px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+
+.bingo{
+  margin-top: 5px;
+  margin-bottom: 1rem;
+} 
+
