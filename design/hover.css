@@ -1,0 +1,101 @@
+/* transition can do by 
+transition-duration
+transition-timing-function
+transition-delay  or just use the shorthand property 
+*/
+
+
+.btn {
+  transition: transform 0.6s, background-color 0.3s ;
+  
+}
+
+.btn:hover {
+  transform: translatey(-2px);
+  box-shadow: 1px 5px 28px 3px #00c2e0;
+}
+/* first parent hover */
+.container .identity-parent:hover{
+  transform: scale(1.05) ;
+  box-shadow:  0 70px 63px -63px #000000;
+}
+
+.container .identity-parent:hover::after{
+  opacity: 1;
+  transform: rotate(2deg);
+}
+
+.second-card:hover{
+  color: rgba(0, 0, 0, 10) !important;
+  font-weight: 500 !important;
+  transform: scale(1.05);
+  box-shadow:  0 70px 63px -63px #000000;
+}
+
+.container .second-card:hover::after{  
+  opacity: 1;
+  transform: rotate(-2deg);
+}
+
+.container .third-card:hover{
+  color: beige !important;
+  font-weight: bold !important;
+  box-shadow:0 70px 63px -63px #000000;
+  transform: scale(1.05);
+}
+
+.container .third-card:hover::after{  
+  opacity: 1;
+  display: block;
+  transform: rotate(-2deg);
+}
+
+.container .fourth-card:hover{
+  transform: scale(1.05);
+  box-shadow:0 70px 63px -63px #000000;
+}
+
+  .container .fifth-card:hover{
+  transform: scale(1.05) ;
+  box-shadow:  0 70px 63px -63px #000000;
+}
+
+.container .fifth-card:hover::after{  
+  opacity: 1;
+  display: block;
+  transform: rotate(-2deg);
+}
+
+  .container .sixth-card:hover{
+  transform: scale(1.05);
+  box-shadow:  0 70px 63px -63px #000000;
+}
+
+  .container .sixth-card:hover::after{
+  opacity: 1;
+  display: block;
+  transform: rotate(-2deg);
+  }
+/* hover rest */
+
+
+.container:hover .second-card,
+.container:hover .third-card,
+.container:hover .fourth-card,
+.container:hover .fifth-card,
+.container:hover .sixth-card{
+  opacity: .5;
+  filter: blur(5px);
+}
+
+
+.container .second-card:hover,
+.container .third-card:hover,
+.container .fourth-card:hover,
+.container .fifth-card:hover,
+.container .sixth-card:hover{
+  opacity: 1;
+  filter: blur(0px);
+}
+
+
