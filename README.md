@@ -1,8 +1,7 @@
-entry-portfolio
-I'm proud to say that i made this
-entry level website protfolio this is not that pro level of
-website development, But i always believe anything will line up
-along the way we learn as we progress.
+
+_**Project portfolio (Without javascript)**_
+      
+ - this is my first mock up portfolio using css, Html and Bootstrap framework
 
 ---
 
