@@ -1,7 +1,9 @@
+ ## **Sample PortFolio (Absolute beginner)**
+ _Created Using:_ 
 
-**Project portfolio (Without javascript)**_
-      
-  this is my first mock up portfolio using css, Html and Bootstrap framework
+    ✔ CSS
+    ✔ HTML
+    ✔ BootStrap Framework
 
 ---
 ![Alt text](image-1.png)
